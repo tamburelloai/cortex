@@ -382,6 +382,54 @@ src/activations/tanh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.s
 .PHONY : src/activations/tanh.cpp.s
 
+src/data_utils/cortex_dataset.o: src/data_utils/cortex_dataset.cpp.o
+.PHONY : src/data_utils/cortex_dataset.o
+
+# target to build an object file
+src/data_utils/cortex_dataset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o
+.PHONY : src/data_utils/cortex_dataset.cpp.o
+
+src/data_utils/cortex_dataset.i: src/data_utils/cortex_dataset.cpp.i
+.PHONY : src/data_utils/cortex_dataset.i
+
+# target to preprocess a source file
+src/data_utils/cortex_dataset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.i
+.PHONY : src/data_utils/cortex_dataset.cpp.i
+
+src/data_utils/cortex_dataset.s: src/data_utils/cortex_dataset.cpp.s
+.PHONY : src/data_utils/cortex_dataset.s
+
+# target to generate assembly for a file
+src/data_utils/cortex_dataset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.s
+.PHONY : src/data_utils/cortex_dataset.cpp.s
+
+src/data_utils/dataloader.o: src/data_utils/dataloader.cpp.o
+.PHONY : src/data_utils/dataloader.o
+
+# target to build an object file
+src/data_utils/dataloader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.o
+.PHONY : src/data_utils/dataloader.cpp.o
+
+src/data_utils/dataloader.i: src/data_utils/dataloader.cpp.i
+.PHONY : src/data_utils/dataloader.i
+
+# target to preprocess a source file
+src/data_utils/dataloader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.i
+.PHONY : src/data_utils/dataloader.cpp.i
+
+src/data_utils/dataloader.s: src/data_utils/dataloader.cpp.s
+.PHONY : src/data_utils/dataloader.s
+
+# target to generate assembly for a file
+src/data_utils/dataloader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.s
+.PHONY : src/data_utils/dataloader.cpp.s
+
 src/layers/linear.o: src/layers/linear.cpp.o
 .PHONY : src/layers/linear.o
 
@@ -681,6 +729,12 @@ help:
 	@echo "... src/activations/tanh.o"
 	@echo "... src/activations/tanh.i"
 	@echo "... src/activations/tanh.s"
+	@echo "... src/data_utils/cortex_dataset.o"
+	@echo "... src/data_utils/cortex_dataset.i"
+	@echo "... src/data_utils/cortex_dataset.s"
+	@echo "... src/data_utils/dataloader.o"
+	@echo "... src/data_utils/dataloader.i"
+	@echo "... src/data_utils/dataloader.s"
 	@echo "... src/layers/linear.o"
 	@echo "... src/layers/linear.i"
 	@echo "... src/layers/linear.s"
