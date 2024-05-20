@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libcortex_layers.a CMakeFiles/cortex_layers.dir/src/layers/linear.cpp.o CMakeFiles/cortex_layers.dir/src/matrix.cpp.o CMakeFiles/cortex_layers.dir/src/parameter.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libcortex_layers.a
