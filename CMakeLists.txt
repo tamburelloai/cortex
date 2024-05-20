@@ -41,6 +41,16 @@ add_executable(
         include/optimizers/optimizer.h
         src/optimizers/adam.cpp
         include/optimizers/adam.h
+        examples/MLP.cpp
+        include/activations/sigmoid.h
+        include/activations/activation.h
+        src/activations/sigmoid.cpp
+        include/activations/relu.h
+        src/activations/relu.cpp
+        include/activations/tanh.h
+        src/activations/tanh.cpp
+        include/activations/softmax.h
+        src/activations/softmax.cpp
 )
 target_link_libraries(AllTests cortex_layers gtest gtest_main pthread)
 
