@@ -167,6 +167,76 @@ CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/optimizers/adam.cpp -o CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.s
 
+CMakeFiles/AllTests.dir/examples/MLP.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/examples/MLP.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/examples/MLP.cpp
+CMakeFiles/AllTests.dir/examples/MLP.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AllTests.dir/examples/MLP.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/examples/MLP.cpp.o -MF CMakeFiles/AllTests.dir/examples/MLP.cpp.o.d -o CMakeFiles/AllTests.dir/examples/MLP.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/examples/MLP.cpp
+
+CMakeFiles/AllTests.dir/examples/MLP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/examples/MLP.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/examples/MLP.cpp > CMakeFiles/AllTests.dir/examples/MLP.cpp.i
+
+CMakeFiles/AllTests.dir/examples/MLP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/examples/MLP.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/examples/MLP.cpp -o CMakeFiles/AllTests.dir/examples/MLP.cpp.s
+
+CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/activations/sigmoid.cpp
+CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o -MF CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o.d -o CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/activations/sigmoid.cpp
+
+CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/activations/sigmoid.cpp > CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.i
+
+CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/activations/sigmoid.cpp -o CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.s
+
+CMakeFiles/AllTests.dir/src/activations/relu.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/src/activations/relu.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp
+CMakeFiles/AllTests.dir/src/activations/relu.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AllTests.dir/src/activations/relu.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/src/activations/relu.cpp.o -MF CMakeFiles/AllTests.dir/src/activations/relu.cpp.o.d -o CMakeFiles/AllTests.dir/src/activations/relu.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp
+
+CMakeFiles/AllTests.dir/src/activations/relu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/src/activations/relu.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp > CMakeFiles/AllTests.dir/src/activations/relu.cpp.i
+
+CMakeFiles/AllTests.dir/src/activations/relu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/activations/relu.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp -o CMakeFiles/AllTests.dir/src/activations/relu.cpp.s
+
+CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/activations/tanh.cpp
+CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o -MF CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o.d -o CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/activations/tanh.cpp
+
+CMakeFiles/AllTests.dir/src/activations/tanh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/src/activations/tanh.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/activations/tanh.cpp > CMakeFiles/AllTests.dir/src/activations/tanh.cpp.i
+
+CMakeFiles/AllTests.dir/src/activations/tanh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/activations/tanh.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/activations/tanh.cpp -o CMakeFiles/AllTests.dir/src/activations/tanh.cpp.s
+
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o -MF CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o.d -o CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp
+
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp > CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i
+
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp -o CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s
+
 # Object files for target AllTests
 AllTests_OBJECTS = \
 "CMakeFiles/AllTests.dir/tests/test_main.cpp.o" \
@@ -175,7 +245,12 @@ AllTests_OBJECTS = \
 "CMakeFiles/AllTests.dir/tests/LinearTest.cpp.o" \
 "CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o" \
 "CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o" \
-"CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o"
+"CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o" \
+"CMakeFiles/AllTests.dir/examples/MLP.cpp.o" \
+"CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o" \
+"CMakeFiles/AllTests.dir/src/activations/relu.cpp.o" \
+"CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o" \
+"CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o"
 
 # External object files for target AllTests
 AllTests_EXTERNAL_OBJECTS =
@@ -187,13 +262,18 @@ AllTests: CMakeFiles/AllTests.dir/tests/LinearTest.cpp.o
 AllTests: CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o
 AllTests: CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o
 AllTests: CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o
+AllTests: CMakeFiles/AllTests.dir/examples/MLP.cpp.o
+AllTests: CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o
+AllTests: CMakeFiles/AllTests.dir/src/activations/relu.cpp.o
+AllTests: CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o
+AllTests: CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o
 AllTests: CMakeFiles/AllTests.dir/build.make
 AllTests: libcortex_layers.a
 AllTests: lib/libgtest.a
 AllTests: lib/libgtest_main.a
 AllTests: lib/libgtest.a
 AllTests: CMakeFiles/AllTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable AllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable AllTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AllTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

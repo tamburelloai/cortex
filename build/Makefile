@@ -262,6 +262,126 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f GTest/googletest/CMakeFiles/gtest_main.dir/build.make GTest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+examples/MLP.o: examples/MLP.cpp.o
+.PHONY : examples/MLP.o
+
+# target to build an object file
+examples/MLP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/examples/MLP.cpp.o
+.PHONY : examples/MLP.cpp.o
+
+examples/MLP.i: examples/MLP.cpp.i
+.PHONY : examples/MLP.i
+
+# target to preprocess a source file
+examples/MLP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/examples/MLP.cpp.i
+.PHONY : examples/MLP.cpp.i
+
+examples/MLP.s: examples/MLP.cpp.s
+.PHONY : examples/MLP.s
+
+# target to generate assembly for a file
+examples/MLP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/examples/MLP.cpp.s
+.PHONY : examples/MLP.cpp.s
+
+src/activations/relu.o: src/activations/relu.cpp.o
+.PHONY : src/activations/relu.o
+
+# target to build an object file
+src/activations/relu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.o
+.PHONY : src/activations/relu.cpp.o
+
+src/activations/relu.i: src/activations/relu.cpp.i
+.PHONY : src/activations/relu.i
+
+# target to preprocess a source file
+src/activations/relu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.i
+.PHONY : src/activations/relu.cpp.i
+
+src/activations/relu.s: src/activations/relu.cpp.s
+.PHONY : src/activations/relu.s
+
+# target to generate assembly for a file
+src/activations/relu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.s
+.PHONY : src/activations/relu.cpp.s
+
+src/activations/sigmoid.o: src/activations/sigmoid.cpp.o
+.PHONY : src/activations/sigmoid.o
+
+# target to build an object file
+src/activations/sigmoid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o
+.PHONY : src/activations/sigmoid.cpp.o
+
+src/activations/sigmoid.i: src/activations/sigmoid.cpp.i
+.PHONY : src/activations/sigmoid.i
+
+# target to preprocess a source file
+src/activations/sigmoid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.i
+.PHONY : src/activations/sigmoid.cpp.i
+
+src/activations/sigmoid.s: src/activations/sigmoid.cpp.s
+.PHONY : src/activations/sigmoid.s
+
+# target to generate assembly for a file
+src/activations/sigmoid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.s
+.PHONY : src/activations/sigmoid.cpp.s
+
+src/activations/softmax.o: src/activations/softmax.cpp.o
+.PHONY : src/activations/softmax.o
+
+# target to build an object file
+src/activations/softmax.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o
+.PHONY : src/activations/softmax.cpp.o
+
+src/activations/softmax.i: src/activations/softmax.cpp.i
+.PHONY : src/activations/softmax.i
+
+# target to preprocess a source file
+src/activations/softmax.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i
+.PHONY : src/activations/softmax.cpp.i
+
+src/activations/softmax.s: src/activations/softmax.cpp.s
+.PHONY : src/activations/softmax.s
+
+# target to generate assembly for a file
+src/activations/softmax.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s
+.PHONY : src/activations/softmax.cpp.s
+
+src/activations/tanh.o: src/activations/tanh.cpp.o
+.PHONY : src/activations/tanh.o
+
+# target to build an object file
+src/activations/tanh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o
+.PHONY : src/activations/tanh.cpp.o
+
+src/activations/tanh.i: src/activations/tanh.cpp.i
+.PHONY : src/activations/tanh.i
+
+# target to preprocess a source file
+src/activations/tanh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.i
+.PHONY : src/activations/tanh.cpp.i
+
+src/activations/tanh.s: src/activations/tanh.cpp.s
+.PHONY : src/activations/tanh.s
+
+# target to generate assembly for a file
+src/activations/tanh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.s
+.PHONY : src/activations/tanh.cpp.s
+
 src/layers/linear.o: src/layers/linear.cpp.o
 .PHONY : src/layers/linear.o
 
@@ -546,6 +666,21 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... examples/MLP.o"
+	@echo "... examples/MLP.i"
+	@echo "... examples/MLP.s"
+	@echo "... src/activations/relu.o"
+	@echo "... src/activations/relu.i"
+	@echo "... src/activations/relu.s"
+	@echo "... src/activations/sigmoid.o"
+	@echo "... src/activations/sigmoid.i"
+	@echo "... src/activations/sigmoid.s"
+	@echo "... src/activations/softmax.o"
+	@echo "... src/activations/softmax.i"
+	@echo "... src/activations/softmax.s"
+	@echo "... src/activations/tanh.o"
+	@echo "... src/activations/tanh.i"
+	@echo "... src/activations/tanh.s"
 	@echo "... src/layers/linear.o"
 	@echo "... src/layers/linear.i"
 	@echo "... src/layers/linear.s"

@@ -138,7 +138,7 @@ GTest/googletest/clean: GTest/googletest/CMakeFiles/gtest_main.dir/clean
 CMakeFiles/cortex_layers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=11,12,13,14 "Built target cortex_layers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=16,17,18,19 "Built target cortex_layers"
 .PHONY : CMakeFiles/cortex_layers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -164,7 +164,7 @@ CMakeFiles/cortex_layers.dir/clean:
 CMakeFiles/cortex.dir/all: CMakeFiles/cortex_layers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex.dir/build.make CMakeFiles/cortex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex.dir/build.make CMakeFiles/cortex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=9,10 "Built target cortex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=14,15 "Built target cortex"
 .PHONY : CMakeFiles/cortex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -192,12 +192,12 @@ CMakeFiles/AllTests.dir/all: GTest/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/AllTests.dir/all: GTest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target AllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target AllTests"
 .PHONY : CMakeFiles/AllTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AllTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AllTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles 0
 .PHONY : CMakeFiles/AllTests.dir/rule
@@ -218,7 +218,7 @@ CMakeFiles/AllTests.dir/clean:
 GTest/googlemock/CMakeFiles/gmock.dir/all: GTest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f GTest/googlemock/CMakeFiles/gmock.dir/build.make GTest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f GTest/googlemock/CMakeFiles/gmock.dir/build.make GTest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=15,16 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=20,21 "Built target gmock"
 .PHONY : GTest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -245,7 +245,7 @@ GTest/googlemock/CMakeFiles/gmock_main.dir/all: GTest/googlemock/CMakeFiles/gmoc
 GTest/googlemock/CMakeFiles/gmock_main.dir/all: GTest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f GTest/googlemock/CMakeFiles/gmock_main.dir/build.make GTest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f GTest/googlemock/CMakeFiles/gmock_main.dir/build.make GTest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=17,18 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=22,23 "Built target gmock_main"
 .PHONY : GTest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +271,7 @@ GTest/googlemock/CMakeFiles/gmock_main.dir/clean:
 GTest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f GTest/googletest/CMakeFiles/gtest.dir/build.make GTest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f GTest/googletest/CMakeFiles/gtest.dir/build.make GTest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=19,20 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=24,25 "Built target gtest"
 .PHONY : GTest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,7 +297,7 @@ GTest/googletest/CMakeFiles/gtest.dir/clean:
 GTest/googletest/CMakeFiles/gtest_main.dir/all: GTest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f GTest/googletest/CMakeFiles/gtest_main.dir/build.make GTest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f GTest/googletest/CMakeFiles/gtest_main.dir/build.make GTest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=21,22 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=26,27 "Built target gtest_main"
 .PHONY : GTest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

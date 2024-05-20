@@ -8,6 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/michaeltamburello/CLionProjects/cortex/examples/MLP.cpp" "CMakeFiles/AllTests.dir/examples/MLP.cpp.o" "gcc" "CMakeFiles/AllTests.dir/examples/MLP.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp" "CMakeFiles/AllTests.dir/src/activations/relu.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/relu.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/activations/sigmoid.cpp" "CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp" "CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/activations/tanh.cpp" "CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/optimizers/adam.cpp" "CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/optimizers/optimizer.cpp" "CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/optimizers/sgd.cpp" "CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o.d"
