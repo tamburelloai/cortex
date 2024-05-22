@@ -10,32 +10,49 @@
 #include <cmath>  // Include cmath for the log function
 
 namespace NN {
-    class CategoricalCrossEntropyLoss: public Loss {
+    class CategoricalCrossEntropyLoss {
     public:
-        double compute(const Matrix& predicted_prob, const Matrix& actual_labels) override {
-            int N = predicted_prob.numRows();
-            int K = predicted_prob.numCols();
+        Matrix yhat;
+        double compute(const Matrix& logits, const Matrix& actual_labels)  {
+            int N = logits.numRows();
+            int K = logits.numCols();
+            yhat = Matrix(N, K);
             double L = 0.0;
-            double instance_sum = 0.0; // exterior sum (i=1...N)
+
+            //compute softmax
             for (size_t i = 0; i < N; ++i) {
-                double class_sum = 0.0;    // interior sum (k=1...K)
+                double max_logit = *std::max_element(logits.data[i].begin(), logits.data[i].end()); // for numerical stability
+                double denominator = 0.0;
                 for (size_t k = 0; k < K; ++k) {
-                    class_sum += actual_labels(i, k) * std::log(std::max(predicted_prob(i, k), 1e-9));  // Using max to ensure non-negative input to log
+                    yhat.data[i][k] = std::exp(logits.data[i][k] - max_logit); // shift by max logit for stability
+                    denominator += yhat.data[i][k];
                 }
-                instance_sum += class_sum;
+                for (size_t k = 0; k < K; ++k) {
+                    yhat.data[i][k] /= denominator; // Normalize to make probabilities sum to 1
+                }
             }
-            L = -(1/N) * instance_sum;
+            // Compute cross-entropy loss
+            for (size_t i = 0; i < N; ++i) {
+                for (size_t k = 0; k < K; ++k) {
+                    L += actual_labels.data[i][k] * std::log(yhat.data[i][k] + 1e-9); // add small number to prevent log(0)
+                }
+            }
+            L = (-1.0 / N) * L; // Average loss over the batch
             return L;
         }
 
-        Matrix gradient(const Matrix& predicted, const Matrix& actual) override {
-            Matrix grad = predicted;  // Start with copying predicted
-            for (size_t i = 0; i < predicted.numRows(); ++i) {
-                for (size_t j = 0; j < predicted.numCols(); ++j) {
-                    grad(i, j) = predicted(i, j) - actual(i, j);  // Simplified gradient for softmax with cross-entropy
+        Matrix backward(const Matrix& actual_labels) {
+            int N = yhat.numRows();
+            int K = yhat.numCols();
+            Matrix dL_dz = Matrix(N, K); // Derivative of loss with respect to logits
+
+            // Compute gradient of loss w.r.t. logits
+            for (size_t i = 0; i < N; ++i) {
+                for (size_t k = 0; k < K; ++k) {
+                    dL_dz.data[i][k] = yhat.data[i][k] - actual_labels.data[i][k];
                 }
             }
-            return grad;
+            return dL_dz;
         }
     };
 }
