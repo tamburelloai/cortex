@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp" "CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.o" "gcc" "CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp" "CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.o" "gcc" "CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/dataset.cpp" "CMakeFiles/cortex_layers.dir/src/dataset.cpp.o" "gcc" "CMakeFiles/cortex_layers.dir/src/dataset.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/layers/linear.cpp" "CMakeFiles/cortex_layers.dir/src/layers/linear.cpp.o" "gcc" "CMakeFiles/cortex_layers.dir/src/layers/linear.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/matrix.cpp" "CMakeFiles/cortex_layers.dir/src/matrix.cpp.o" "gcc" "CMakeFiles/cortex_layers.dir/src/matrix.cpp.o.d"

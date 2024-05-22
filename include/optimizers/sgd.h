@@ -17,7 +17,7 @@ namespace Optim {
 
         void step() override {
             for (auto param : parameters) {
-                param->data = param->data  + ( learningRate * param->grad );
+                param->data = param->data  - ( learningRate * param->grad );
             }
         }
 

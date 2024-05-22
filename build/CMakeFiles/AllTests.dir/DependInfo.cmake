@@ -10,8 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/michaeltamburello/CLionProjects/cortex/examples/MLP.cpp" "CMakeFiles/AllTests.dir/examples/MLP.cpp.o" "gcc" "CMakeFiles/AllTests.dir/examples/MLP.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp" "CMakeFiles/AllTests.dir/src/activations/relu.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/relu.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp" "CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/data_utils/cortex_dataset.cpp" "CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/dataloader.cpp" "CMakeFiles/AllTests.dir/src/dataloader.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/dataloader.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/tests/ActivationsTest.cpp" "CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o" "gcc" "CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/tests/LinearTest.cpp" "CMakeFiles/AllTests.dir/tests/LinearTest.cpp.o" "gcc" "CMakeFiles/AllTests.dir/tests/LinearTest.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/tests/MatrixTest.cpp" "CMakeFiles/AllTests.dir/tests/MatrixTest.cpp.o" "gcc" "CMakeFiles/AllTests.dir/tests/MatrixTest.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/tests/ParameterTest.cpp" "CMakeFiles/AllTests.dir/tests/ParameterTest.cpp.o" "gcc" "CMakeFiles/AllTests.dir/tests/ParameterTest.cpp.o.d"

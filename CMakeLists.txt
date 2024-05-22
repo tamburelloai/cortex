@@ -55,6 +55,8 @@ add_executable(
         include/loss_functions/crossentropy_loss.h
         include/activations/softmax.h
         src/activations/softmax.cpp
+        tests/ActivationsTest.cpp
+        include/optimizers/adam.h
 )
 target_link_libraries(AllTests cortex_layers gtest gtest_main pthread)
 

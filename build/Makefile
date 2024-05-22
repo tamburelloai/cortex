@@ -313,6 +313,33 @@ src/activations/relu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.s
 .PHONY : src/activations/relu.cpp.s
 
+src/activations/softmax.o: src/activations/softmax.cpp.o
+.PHONY : src/activations/softmax.o
+
+# target to build an object file
+src/activations/softmax.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o
+.PHONY : src/activations/softmax.cpp.o
+
+src/activations/softmax.i: src/activations/softmax.cpp.i
+.PHONY : src/activations/softmax.i
+
+# target to preprocess a source file
+src/activations/softmax.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i
+.PHONY : src/activations/softmax.cpp.i
+
+src/activations/softmax.s: src/activations/softmax.cpp.s
+.PHONY : src/activations/softmax.s
+
+# target to generate assembly for a file
+src/activations/softmax.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s
+.PHONY : src/activations/softmax.cpp.s
+
 src/data_utils/cortex_dataset.o: src/data_utils/cortex_dataset.cpp.o
 .PHONY : src/data_utils/cortex_dataset.o
 
@@ -505,6 +532,30 @@ src/parameter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/parameter.cpp.s
 .PHONY : src/parameter.cpp.s
 
+tests/ActivationsTest.o: tests/ActivationsTest.cpp.o
+.PHONY : tests/ActivationsTest.o
+
+# target to build an object file
+tests/ActivationsTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o
+.PHONY : tests/ActivationsTest.cpp.o
+
+tests/ActivationsTest.i: tests/ActivationsTest.cpp.i
+.PHONY : tests/ActivationsTest.i
+
+# target to preprocess a source file
+tests/ActivationsTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.i
+.PHONY : tests/ActivationsTest.cpp.i
+
+tests/ActivationsTest.s: tests/ActivationsTest.cpp.s
+.PHONY : tests/ActivationsTest.s
+
+# target to generate assembly for a file
+tests/ActivationsTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.s
+.PHONY : tests/ActivationsTest.cpp.s
+
 tests/LinearTest.o: tests/LinearTest.cpp.o
 .PHONY : tests/LinearTest.o
 
@@ -627,6 +678,9 @@ help:
 	@echo "... src/activations/relu.o"
 	@echo "... src/activations/relu.i"
 	@echo "... src/activations/relu.s"
+	@echo "... src/activations/softmax.o"
+	@echo "... src/activations/softmax.i"
+	@echo "... src/activations/softmax.s"
 	@echo "... src/data_utils/cortex_dataset.o"
 	@echo "... src/data_utils/cortex_dataset.i"
 	@echo "... src/data_utils/cortex_dataset.s"
@@ -651,6 +705,9 @@ help:
 	@echo "... src/parameter.o"
 	@echo "... src/parameter.i"
 	@echo "... src/parameter.s"
+	@echo "... tests/ActivationsTest.o"
+	@echo "... tests/ActivationsTest.i"
+	@echo "... tests/ActivationsTest.s"
 	@echo "... tests/LinearTest.o"
 	@echo "... tests/LinearTest.i"
 	@echo "... tests/LinearTest.s"

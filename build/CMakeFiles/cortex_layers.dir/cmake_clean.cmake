@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.o"
   "CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.o.d"
+  "CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.o"
+  "CMakeFiles/cortex_layers.dir/src/activations/softmax.cpp.o.d"
   "CMakeFiles/cortex_layers.dir/src/dataset.cpp.o"
   "CMakeFiles/cortex_layers.dir/src/dataset.cpp.o.d"
   "CMakeFiles/cortex_layers.dir/src/layers/linear.cpp.o"

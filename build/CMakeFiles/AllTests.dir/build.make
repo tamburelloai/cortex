@@ -181,6 +181,34 @@ CMakeFiles/AllTests.dir/src/activations/relu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/activations/relu.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/activations/relu.cpp -o CMakeFiles/AllTests.dir/src/activations/relu.cpp.s
 
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o -MF CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o.d -o CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp
+
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp > CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i
+
+CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp -o CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s
+
+CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o: CMakeFiles/AllTests.dir/flags.make
+CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/tests/ActivationsTest.cpp
+CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o: CMakeFiles/AllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o -MF CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o.d -o CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/tests/ActivationsTest.cpp
+
+CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/tests/ActivationsTest.cpp > CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.i
+
+CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/tests/ActivationsTest.cpp -o CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.s
+
 # Object files for target AllTests
 AllTests_OBJECTS = \
 "CMakeFiles/AllTests.dir/tests/test_main.cpp.o" \
@@ -190,7 +218,9 @@ AllTests_OBJECTS = \
 "CMakeFiles/AllTests.dir/examples/MLP.cpp.o" \
 "CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o" \
 "CMakeFiles/AllTests.dir/src/dataloader.cpp.o" \
-"CMakeFiles/AllTests.dir/src/activations/relu.cpp.o"
+"CMakeFiles/AllTests.dir/src/activations/relu.cpp.o" \
+"CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o" \
+"CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o"
 
 # External object files for target AllTests
 AllTests_EXTERNAL_OBJECTS =
@@ -203,13 +233,15 @@ AllTests: CMakeFiles/AllTests.dir/examples/MLP.cpp.o
 AllTests: CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o
 AllTests: CMakeFiles/AllTests.dir/src/dataloader.cpp.o
 AllTests: CMakeFiles/AllTests.dir/src/activations/relu.cpp.o
+AllTests: CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o
+AllTests: CMakeFiles/AllTests.dir/tests/ActivationsTest.cpp.o
 AllTests: CMakeFiles/AllTests.dir/build.make
 AllTests: libcortex_layers.a
 AllTests: lib/libgtest.a
 AllTests: lib/libgtest_main.a
 AllTests: lib/libgtest.a
 AllTests: CMakeFiles/AllTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable AllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable AllTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AllTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

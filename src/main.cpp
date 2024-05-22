@@ -9,6 +9,7 @@
 #include "../include/activations/relu.h"
 #include "../include/activations/softmax.h"
 #include "../include/optimizers/sgd.h"
+#include "../include/optimizers/adam.h"
 #include "../include/optimizers/optimizer.h"
 #include "../include/loss_functions/mse_loss.h"
 #include "../include/loss_functions/crossentropy_loss.h"
@@ -22,15 +23,15 @@ int main() {
     size_t NUM_EPOCHS = 100;
     std::string filename = "../sample_datasets/iris.csv";
     Dataset ds = Dataset(filename);
-    DataLoader dataloader = DataLoader(ds, 16, true);
+    DataLoader dataloader = DataLoader(ds, 1, true);
 
 
     NN::Model myModel = NN::Model(
-            new NN::Linear(4, 3, InitType::Xavier),  // First linear layer
-            new NN::Softmax()
+            new NN::Linear(4, 3, InitType::Xavier)//,  // First linear layer
+            //new NN::Softmax()
     );
     auto params = myModel.params();
-    Optim::SGD sgd(params, 0.0001);
+    Optim::Adam optimizer(params, 0.01);
     NN::CategoricalCrossEntropyLoss lossFunction;
 
 
@@ -49,7 +50,7 @@ int main() {
             batches++;
             Matrix grad = lossFunction.gradient(batchYhat, batchY);
             myModel.backward(grad);
-            sgd.step();
+            optimizer.step();
         }
         dataloader.reset();
         std::cout << "-----EPOCH: " << epoch << "-----TOTAL LOSS: " << totalLoss << "-----------" << std::endl;
