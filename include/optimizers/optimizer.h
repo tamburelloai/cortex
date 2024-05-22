@@ -1,24 +1,25 @@
 //
-// Created by Michael Tamburello on 5/20/24.
+// Created by Michael Tamburello on 5/21/24.
 //
 
 #ifndef CORTEX_OPTIMIZER_H
 #define CORTEX_OPTIMIZER_H
 #include <vector>
-#include <iostream>
-#include "parameter.h"
+#include "../include/parameter.h"
 
-
+namespace Optim {
 class Optimizer {
-protected:
-    std::vector<NN::Parameter*> parameters;
-
 public:
-    Optimizer();
-    virtual ~Optimizer();
-    virtual void update() = 0;
-    void registerParameters(const std::vector<NN::Parameter*>& params);
+    Optimizer(std::vector<NN::Parameter*>& params)
+    : parameters(params) {}
+
+    virtual ~Optimizer() {}
+    virtual void step() = 0;
+
+protected:
+    std::vector<NN::Parameter*>& parameters;
 };
 
+}
 
-#endif //CORTEX_OPTIMIZER_H
+#endif // OPTIMIZER_H

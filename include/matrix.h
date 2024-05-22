@@ -23,7 +23,13 @@ public:
 
     Matrix(initializer_list<initializer_list<double>> initData);
 
+    Matrix(vector<vector<double>> initData);
+
+    Matrix(vector<vector<int>> initData);
+
     Matrix(initializer_list<double> initData);
+
+    Matrix(vector<double> initData);
 
     double &operator()(size_t i, size_t j);
 
@@ -50,9 +56,6 @@ public:
     friend Matrix operator*(const Matrix &mat, double scalar); // lhs and rhs scalar mult of matrix
     friend Matrix operator*(double scalar, const Matrix &mat); // lhs and rhs scalar mult of matrix
 
-
-
-
     Matrix matMul(const Matrix &other);
 
     Matrix matMul(const Matrix &other) const; // Note the const at the end of the declaration
@@ -73,6 +76,8 @@ public:
     Matrix scale(double scalar) const;
 
     void subtractInPlace(const Matrix &other);
+
+    double sum();
 
 
 };

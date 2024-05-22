@@ -16,8 +16,11 @@ add_subdirectory(GTest)
 add_library(
         cortex_layers
         src/layers/linear.cpp
+        src/activations/relu.cpp
         src/matrix.cpp
         src/parameter.cpp
+        src/one_hot_encoder.cpp
+        src/dataset.cpp
 )
 target_include_directories(cortex_layers PUBLIC include)
 
@@ -35,22 +38,19 @@ add_executable(
         tests/MatrixTest.cpp
         tests/ParameterTest.cpp
         tests/LinearTest.cpp
-        src/optimizers/sgd.cpp
-        include/optimizers/sgd.h
-        src/optimizers/optimizer.cpp
-        include/optimizers/optimizer.h
-        src/optimizers/adam.cpp
-        include/optimizers/adam.h
         examples/MLP.cpp
-        include/activations/sigmoid.h
-        include/activations/activation.h
-        src/activations/sigmoid.cpp
+        include/data_utils/cortex_dataset.h
+        src/data_utils/cortex_dataset.cpp
+        src/dataloader.cpp
+        include/data_utils/dataloader.h
+        include/layers/layer.h
+        include/model.h
         include/activations/relu.h
         src/activations/relu.cpp
-        include/activations/tanh.h
-        src/activations/tanh.cpp
-        include/activations/softmax.h
-        src/activations/softmax.cpp
+        include/optimizers/optimizer.h
+        include/optimizers/sgd.h
+        include/loss_functions/loss.h
+        include/loss_functions/mse_loss.h
 )
 target_link_libraries(AllTests cortex_layers gtest gtest_main pthread)
 

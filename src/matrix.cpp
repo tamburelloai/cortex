@@ -35,6 +35,28 @@ Matrix::Matrix(initializer_list<double> initData) {
 
 }
 
+
+Matrix::Matrix(vector<vector<double>> initData) {
+    m = initData.size();
+    n = initData.begin()->size();
+    data.resize(m);
+    size_t i = 0;
+    for (const auto& row: initData) {
+        if (row.size() != n) throw std::invalid_argument("All rows must be same size");
+        data[i++] = row;
+    }
+}
+
+Matrix::Matrix(vector<double> initData) {
+    m = initData.size();
+    n = 1;
+    data.resize(m);
+    size_t i = 0;
+    for (double val: initData) {
+        data[i++].push_back(val);
+    }
+
+}
 double& Matrix::operator()(size_t i, size_t j) {
     return data.at(i).at(j);
 }
@@ -78,11 +100,28 @@ void Matrix::print() const {
 
 
 Matrix Matrix::operator+(const Matrix& other) const {
-    if (m != other.numRows() || n != other.numCols()) throw invalid_argument("Matrices must be identical in shape");
+    if (m != other.numRows() && n != other.numCols()) throw invalid_argument("Matrices must be identical in shape");
     Matrix result(m, n);
-    for (size_t i = 0; i < m; i++) {
-        for (size_t j = 0; j < n; j++) {
-            result(i, j) = data[i][j] + other.getElement(i, j);
+
+    if (m == 1 && other.numRows() != 1) {
+        if (n != other.numCols()) throw invalid_argument("Matrices are invalid to elementwise add or broadcast");
+        for (size_t i = 0; i < m; i++) {
+            for (size_t j = 0; j < n; j++) {
+                result(i, j) = data[0][j] + other.getElement(i, j);
+            }
+        }
+    } else if (m != 1 && other.numRows() == 1) {
+        if (n != other.numCols()) throw invalid_argument("Matrices are invalid to elementwise add or broadcast");
+        for (size_t i = 0; i < m; i++) {
+            for (size_t j = 0; j < n; j++) {
+                result(i, j) = data[i][j] + other.getElement(0, j);
+            }
+        }
+    } else {
+        for (size_t i = 0; i < m; i++) {
+            for (size_t j = 0; j < n; j++) {
+                result(i, j) = data[i][j] + other.getElement(i, j);
+            }
         }
     }
     return result;
@@ -145,6 +184,21 @@ Matrix Matrix::matMul(const Matrix& other) {
     }
     return result;
 }
+
+Matrix Matrix::matMul(const Matrix& other) const {
+    if (this->numCols() != other.numRows()) throw invalid_argument("Matrix dims are not compatible");
+    Matrix result(this->numRows(), other.numCols());
+    for (size_t i=0; i < this->numRows(); i++) {
+        for (size_t j=0; j < other.numCols(); j++) {
+            for (size_t k=0; k < this->numCols(); k++) {
+                result(i, j) += this->getElement(i, k) * other.getElement(k, j);
+            }
+        }
+    }
+    return result;
+}
+
+
 
 bool Matrix::operator==(const Matrix &other) const {
     if (m != other.numRows() || n != other.numCols()) {
@@ -245,4 +299,13 @@ Matrix& Matrix::operator/=(double scalar) {
     return *this;
 }
 
+double Matrix::sum() {
+    double sum = 0.0;
+    for (size_t i = 0; i < m; i++) {
+        for (size_t j = 0; j < n; j++) {
+            sum += data[i][j];
+        }
+    }
+    return sum;
+}
 

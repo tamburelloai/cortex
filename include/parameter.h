@@ -9,10 +9,9 @@
 
 namespace NN {
     class Parameter {
-    private:
+    public:
         Matrix data;
         Matrix grad;
-    public:
         Parameter(size_t m, size_t n, InitType initType = InitType::Random);
         void initialize(InitType initType);
 

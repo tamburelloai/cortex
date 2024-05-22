@@ -14,10 +14,20 @@ Linear::Linear(size_t inputSize, size_t outputSize, InitType initType)
 Matrix Linear::forward(const Matrix& input) {
     this->input = input; // Store input for use in backward pass
     // Implement the forward logic correctly
-    output = this->input.matMul(weights.getData()) + bias.getData();
+    output = this->input.matMul(weights.getData());
+    output = output + bias.getData();
     return output;
 }
 
-void Linear::backward() {
+Matrix Linear::backward(const Matrix& gradOutput) {
+    Matrix gradWeights = input.transpose().matMul(gradOutput);
+    weights.grad = gradWeights;
+    //TODO Matrix gradBias = gradOutput.sumRows();
+    //TODO bias.grad = gradBias;
+    Matrix gradInput = gradOutput.matMul(weights.data.transpose());
+    return gradInput;
+}
 
+std::vector<Parameter*> Linear::params() {
+    return std::vector<Parameter*>{&weights, &bias};
 }

@@ -291,6 +291,7 @@ src/activations/relu.o: src/activations/relu.cpp.o
 
 # target to build an object file
 src/activations/relu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.o
 .PHONY : src/activations/relu.cpp.o
 
@@ -299,6 +300,7 @@ src/activations/relu.i: src/activations/relu.cpp.i
 
 # target to preprocess a source file
 src/activations/relu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.i
 .PHONY : src/activations/relu.cpp.i
 
@@ -307,80 +309,9 @@ src/activations/relu.s: src/activations/relu.cpp.s
 
 # target to generate assembly for a file
 src/activations/relu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/activations/relu.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/relu.cpp.s
 .PHONY : src/activations/relu.cpp.s
-
-src/activations/sigmoid.o: src/activations/sigmoid.cpp.o
-.PHONY : src/activations/sigmoid.o
-
-# target to build an object file
-src/activations/sigmoid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.o
-.PHONY : src/activations/sigmoid.cpp.o
-
-src/activations/sigmoid.i: src/activations/sigmoid.cpp.i
-.PHONY : src/activations/sigmoid.i
-
-# target to preprocess a source file
-src/activations/sigmoid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.i
-.PHONY : src/activations/sigmoid.cpp.i
-
-src/activations/sigmoid.s: src/activations/sigmoid.cpp.s
-.PHONY : src/activations/sigmoid.s
-
-# target to generate assembly for a file
-src/activations/sigmoid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/sigmoid.cpp.s
-.PHONY : src/activations/sigmoid.cpp.s
-
-src/activations/softmax.o: src/activations/softmax.cpp.o
-.PHONY : src/activations/softmax.o
-
-# target to build an object file
-src/activations/softmax.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o
-.PHONY : src/activations/softmax.cpp.o
-
-src/activations/softmax.i: src/activations/softmax.cpp.i
-.PHONY : src/activations/softmax.i
-
-# target to preprocess a source file
-src/activations/softmax.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.i
-.PHONY : src/activations/softmax.cpp.i
-
-src/activations/softmax.s: src/activations/softmax.cpp.s
-.PHONY : src/activations/softmax.s
-
-# target to generate assembly for a file
-src/activations/softmax.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/softmax.cpp.s
-.PHONY : src/activations/softmax.cpp.s
-
-src/activations/tanh.o: src/activations/tanh.cpp.o
-.PHONY : src/activations/tanh.o
-
-# target to build an object file
-src/activations/tanh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o
-.PHONY : src/activations/tanh.cpp.o
-
-src/activations/tanh.i: src/activations/tanh.cpp.i
-.PHONY : src/activations/tanh.i
-
-# target to preprocess a source file
-src/activations/tanh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.i
-.PHONY : src/activations/tanh.cpp.i
-
-src/activations/tanh.s: src/activations/tanh.cpp.s
-.PHONY : src/activations/tanh.s
-
-# target to generate assembly for a file
-src/activations/tanh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/activations/tanh.cpp.s
-.PHONY : src/activations/tanh.cpp.s
 
 src/data_utils/cortex_dataset.o: src/data_utils/cortex_dataset.cpp.o
 .PHONY : src/data_utils/cortex_dataset.o
@@ -550,78 +481,6 @@ src/one_hot_encoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.s
 .PHONY : src/one_hot_encoder.cpp.s
 
-src/optimizers/adam.o: src/optimizers/adam.cpp.o
-.PHONY : src/optimizers/adam.o
-
-# target to build an object file
-src/optimizers/adam.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o
-.PHONY : src/optimizers/adam.cpp.o
-
-src/optimizers/adam.i: src/optimizers/adam.cpp.i
-.PHONY : src/optimizers/adam.i
-
-# target to preprocess a source file
-src/optimizers/adam.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.i
-.PHONY : src/optimizers/adam.cpp.i
-
-src/optimizers/adam.s: src/optimizers/adam.cpp.s
-.PHONY : src/optimizers/adam.s
-
-# target to generate assembly for a file
-src/optimizers/adam.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.s
-.PHONY : src/optimizers/adam.cpp.s
-
-src/optimizers/optimizer.o: src/optimizers/optimizer.cpp.o
-.PHONY : src/optimizers/optimizer.o
-
-# target to build an object file
-src/optimizers/optimizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o
-.PHONY : src/optimizers/optimizer.cpp.o
-
-src/optimizers/optimizer.i: src/optimizers/optimizer.cpp.i
-.PHONY : src/optimizers/optimizer.i
-
-# target to preprocess a source file
-src/optimizers/optimizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.i
-.PHONY : src/optimizers/optimizer.cpp.i
-
-src/optimizers/optimizer.s: src/optimizers/optimizer.cpp.s
-.PHONY : src/optimizers/optimizer.s
-
-# target to generate assembly for a file
-src/optimizers/optimizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.s
-.PHONY : src/optimizers/optimizer.cpp.s
-
-src/optimizers/sgd.o: src/optimizers/sgd.cpp.o
-.PHONY : src/optimizers/sgd.o
-
-# target to build an object file
-src/optimizers/sgd.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o
-.PHONY : src/optimizers/sgd.cpp.o
-
-src/optimizers/sgd.i: src/optimizers/sgd.cpp.i
-.PHONY : src/optimizers/sgd.i
-
-# target to preprocess a source file
-src/optimizers/sgd.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.i
-.PHONY : src/optimizers/sgd.cpp.i
-
-src/optimizers/sgd.s: src/optimizers/sgd.cpp.s
-.PHONY : src/optimizers/sgd.s
-
-# target to generate assembly for a file
-src/optimizers/sgd.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.s
-.PHONY : src/optimizers/sgd.cpp.s
-
 src/parameter.o: src/parameter.cpp.o
 .PHONY : src/parameter.o
 
@@ -768,15 +627,6 @@ help:
 	@echo "... src/activations/relu.o"
 	@echo "... src/activations/relu.i"
 	@echo "... src/activations/relu.s"
-	@echo "... src/activations/sigmoid.o"
-	@echo "... src/activations/sigmoid.i"
-	@echo "... src/activations/sigmoid.s"
-	@echo "... src/activations/softmax.o"
-	@echo "... src/activations/softmax.i"
-	@echo "... src/activations/softmax.s"
-	@echo "... src/activations/tanh.o"
-	@echo "... src/activations/tanh.i"
-	@echo "... src/activations/tanh.s"
 	@echo "... src/data_utils/cortex_dataset.o"
 	@echo "... src/data_utils/cortex_dataset.i"
 	@echo "... src/data_utils/cortex_dataset.s"
@@ -798,15 +648,6 @@ help:
 	@echo "... src/one_hot_encoder.o"
 	@echo "... src/one_hot_encoder.i"
 	@echo "... src/one_hot_encoder.s"
-	@echo "... src/optimizers/adam.o"
-	@echo "... src/optimizers/adam.i"
-	@echo "... src/optimizers/adam.s"
-	@echo "... src/optimizers/optimizer.o"
-	@echo "... src/optimizers/optimizer.i"
-	@echo "... src/optimizers/optimizer.s"
-	@echo "... src/optimizers/sgd.o"
-	@echo "... src/optimizers/sgd.i"
-	@echo "... src/optimizers/sgd.s"
 	@echo "... src/parameter.o"
 	@echo "... src/parameter.i"
 	@echo "... src/parameter.s"
