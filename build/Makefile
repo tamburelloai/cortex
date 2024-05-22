@@ -406,29 +406,53 @@ src/data_utils/cortex_dataset.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.s
 .PHONY : src/data_utils/cortex_dataset.cpp.s
 
-src/data_utils/dataloader.o: src/data_utils/dataloader.cpp.o
-.PHONY : src/data_utils/dataloader.o
+src/dataloader.o: src/dataloader.cpp.o
+.PHONY : src/dataloader.o
 
 # target to build an object file
-src/data_utils/dataloader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.o
-.PHONY : src/data_utils/dataloader.cpp.o
+src/dataloader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/dataloader.cpp.o
+.PHONY : src/dataloader.cpp.o
 
-src/data_utils/dataloader.i: src/data_utils/dataloader.cpp.i
-.PHONY : src/data_utils/dataloader.i
+src/dataloader.i: src/dataloader.cpp.i
+.PHONY : src/dataloader.i
 
 # target to preprocess a source file
-src/data_utils/dataloader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.i
-.PHONY : src/data_utils/dataloader.cpp.i
+src/dataloader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/dataloader.cpp.i
+.PHONY : src/dataloader.cpp.i
 
-src/data_utils/dataloader.s: src/data_utils/dataloader.cpp.s
-.PHONY : src/data_utils/dataloader.s
+src/dataloader.s: src/dataloader.cpp.s
+.PHONY : src/dataloader.s
 
 # target to generate assembly for a file
-src/data_utils/dataloader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.s
-.PHONY : src/data_utils/dataloader.cpp.s
+src/dataloader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AllTests.dir/build.make CMakeFiles/AllTests.dir/src/dataloader.cpp.s
+.PHONY : src/dataloader.cpp.s
+
+src/dataset.o: src/dataset.cpp.o
+.PHONY : src/dataset.o
+
+# target to build an object file
+src/dataset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/dataset.cpp.o
+.PHONY : src/dataset.cpp.o
+
+src/dataset.i: src/dataset.cpp.i
+.PHONY : src/dataset.i
+
+# target to preprocess a source file
+src/dataset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/dataset.cpp.i
+.PHONY : src/dataset.cpp.i
+
+src/dataset.s: src/dataset.cpp.s
+.PHONY : src/dataset.s
+
+# target to generate assembly for a file
+src/dataset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/dataset.cpp.s
+.PHONY : src/dataset.cpp.s
 
 src/layers/linear.o: src/layers/linear.cpp.o
 .PHONY : src/layers/linear.o
@@ -501,6 +525,30 @@ src/matrix.s: src/matrix.cpp.s
 src/matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/matrix.cpp.s
 .PHONY : src/matrix.cpp.s
+
+src/one_hot_encoder.o: src/one_hot_encoder.cpp.o
+.PHONY : src/one_hot_encoder.o
+
+# target to build an object file
+src/one_hot_encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o
+.PHONY : src/one_hot_encoder.cpp.o
+
+src/one_hot_encoder.i: src/one_hot_encoder.cpp.i
+.PHONY : src/one_hot_encoder.i
+
+# target to preprocess a source file
+src/one_hot_encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.i
+.PHONY : src/one_hot_encoder.cpp.i
+
+src/one_hot_encoder.s: src/one_hot_encoder.cpp.s
+.PHONY : src/one_hot_encoder.s
+
+# target to generate assembly for a file
+src/one_hot_encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cortex_layers.dir/build.make CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.s
+.PHONY : src/one_hot_encoder.cpp.s
 
 src/optimizers/adam.o: src/optimizers/adam.cpp.o
 .PHONY : src/optimizers/adam.o
@@ -732,9 +780,12 @@ help:
 	@echo "... src/data_utils/cortex_dataset.o"
 	@echo "... src/data_utils/cortex_dataset.i"
 	@echo "... src/data_utils/cortex_dataset.s"
-	@echo "... src/data_utils/dataloader.o"
-	@echo "... src/data_utils/dataloader.i"
-	@echo "... src/data_utils/dataloader.s"
+	@echo "... src/dataloader.o"
+	@echo "... src/dataloader.i"
+	@echo "... src/dataloader.s"
+	@echo "... src/dataset.o"
+	@echo "... src/dataset.i"
+	@echo "... src/dataset.s"
 	@echo "... src/layers/linear.o"
 	@echo "... src/layers/linear.i"
 	@echo "... src/layers/linear.s"
@@ -744,6 +795,9 @@ help:
 	@echo "... src/matrix.o"
 	@echo "... src/matrix.i"
 	@echo "... src/matrix.s"
+	@echo "... src/one_hot_encoder.o"
+	@echo "... src/one_hot_encoder.i"
+	@echo "... src/one_hot_encoder.s"
 	@echo "... src/optimizers/adam.o"
 	@echo "... src/optimizers/adam.i"
 	@echo "... src/optimizers/adam.s"

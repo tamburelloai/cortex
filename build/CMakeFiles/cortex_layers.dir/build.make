@@ -111,11 +111,41 @@ CMakeFiles/cortex_layers.dir/src/parameter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cortex_layers.dir/src/parameter.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/parameter.cpp -o CMakeFiles/cortex_layers.dir/src/parameter.cpp.s
 
+CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o: CMakeFiles/cortex_layers.dir/flags.make
+CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/one_hot_encoder.cpp
+CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o: CMakeFiles/cortex_layers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o -MF CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o.d -o CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/one_hot_encoder.cpp
+
+CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/one_hot_encoder.cpp > CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.i
+
+CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/one_hot_encoder.cpp -o CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.s
+
+CMakeFiles/cortex_layers.dir/src/dataset.cpp.o: CMakeFiles/cortex_layers.dir/flags.make
+CMakeFiles/cortex_layers.dir/src/dataset.cpp.o: /Users/michaeltamburello/CLionProjects/cortex/src/dataset.cpp
+CMakeFiles/cortex_layers.dir/src/dataset.cpp.o: CMakeFiles/cortex_layers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cortex_layers.dir/src/dataset.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cortex_layers.dir/src/dataset.cpp.o -MF CMakeFiles/cortex_layers.dir/src/dataset.cpp.o.d -o CMakeFiles/cortex_layers.dir/src/dataset.cpp.o -c /Users/michaeltamburello/CLionProjects/cortex/src/dataset.cpp
+
+CMakeFiles/cortex_layers.dir/src/dataset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cortex_layers.dir/src/dataset.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michaeltamburello/CLionProjects/cortex/src/dataset.cpp > CMakeFiles/cortex_layers.dir/src/dataset.cpp.i
+
+CMakeFiles/cortex_layers.dir/src/dataset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cortex_layers.dir/src/dataset.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michaeltamburello/CLionProjects/cortex/src/dataset.cpp -o CMakeFiles/cortex_layers.dir/src/dataset.cpp.s
+
 # Object files for target cortex_layers
 cortex_layers_OBJECTS = \
 "CMakeFiles/cortex_layers.dir/src/layers/linear.cpp.o" \
 "CMakeFiles/cortex_layers.dir/src/matrix.cpp.o" \
-"CMakeFiles/cortex_layers.dir/src/parameter.cpp.o"
+"CMakeFiles/cortex_layers.dir/src/parameter.cpp.o" \
+"CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o" \
+"CMakeFiles/cortex_layers.dir/src/dataset.cpp.o"
 
 # External object files for target cortex_layers
 cortex_layers_EXTERNAL_OBJECTS =
@@ -123,9 +153,11 @@ cortex_layers_EXTERNAL_OBJECTS =
 libcortex_layers.a: CMakeFiles/cortex_layers.dir/src/layers/linear.cpp.o
 libcortex_layers.a: CMakeFiles/cortex_layers.dir/src/matrix.cpp.o
 libcortex_layers.a: CMakeFiles/cortex_layers.dir/src/parameter.cpp.o
+libcortex_layers.a: CMakeFiles/cortex_layers.dir/src/one_hot_encoder.cpp.o
+libcortex_layers.a: CMakeFiles/cortex_layers.dir/src/dataset.cpp.o
 libcortex_layers.a: CMakeFiles/cortex_layers.dir/build.make
 libcortex_layers.a: CMakeFiles/cortex_layers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcortex_layers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/michaeltamburello/CLionProjects/cortex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libcortex_layers.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/cortex_layers.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cortex_layers.dir/link.txt --verbose=$(VERBOSE)
 

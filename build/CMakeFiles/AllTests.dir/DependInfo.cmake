@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/michaeltamburello/CLionProjects/cortex/src/activations/softmax.cpp" "CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/softmax.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/activations/tanh.cpp" "CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/activations/tanh.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/data_utils/cortex_dataset.cpp" "CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/data_utils/cortex_dataset.cpp.o.d"
-  "/Users/michaeltamburello/CLionProjects/cortex/src/data_utils/dataloader.cpp" "CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/data_utils/dataloader.cpp.o.d"
+  "/Users/michaeltamburello/CLionProjects/cortex/src/dataloader.cpp" "CMakeFiles/AllTests.dir/src/dataloader.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/dataloader.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/optimizers/adam.cpp" "CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/optimizers/adam.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/optimizers/optimizer.cpp" "CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/optimizers/optimizer.cpp.o.d"
   "/Users/michaeltamburello/CLionProjects/cortex/src/optimizers/sgd.cpp" "CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o" "gcc" "CMakeFiles/AllTests.dir/src/optimizers/sgd.cpp.o.d"
