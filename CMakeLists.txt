@@ -17,6 +17,7 @@ add_library(
         cortex_layers
         src/layers/linear.cpp
         src/activations/relu.cpp
+        src/activations/softmax.cpp
         src/matrix.cpp
         src/parameter.cpp
         src/one_hot_encoder.cpp
@@ -51,6 +52,9 @@ add_executable(
         include/optimizers/sgd.h
         include/loss_functions/loss.h
         include/loss_functions/mse_loss.h
+        include/loss_functions/crossentropy_loss.h
+        include/activations/softmax.h
+        src/activations/softmax.cpp
 )
 target_link_libraries(AllTests cortex_layers gtest gtest_main pthread)
 

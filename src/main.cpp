@@ -7,26 +7,31 @@
 #include "../include/layers/linear.h"
 #include "../include/model.h"
 #include "../include/activations/relu.h"
+#include "../include/activations/softmax.h"
 #include "../include/optimizers/sgd.h"
 #include "../include/optimizers/optimizer.h"
 #include "../include/loss_functions/mse_loss.h"
+#include "../include/loss_functions/crossentropy_loss.h"
 
+
+
+//TODO fix update
+//TODO fix stepping
 
 int main() {
-    size_t NUM_EPOCHS = 10;
+    size_t NUM_EPOCHS = 100;
     std::string filename = "../sample_datasets/iris.csv";
     Dataset ds = Dataset(filename);
-    DataLoader dataloader = DataLoader(ds, 32, true);
+    DataLoader dataloader = DataLoader(ds, 16, true);
 
 
     NN::Model myModel = NN::Model(
-            new NN::Linear(4, 128, InitType::Random),  // First linear layer
-            new NN::ReLU(),
-            new NN::Linear(128, 3, InitType::Random)  // First linear layer
+            new NN::Linear(4, 3, InitType::Xavier),  // First linear layer
+            new NN::Softmax()
     );
     auto params = myModel.params();
-    Optim::SGD sgd(params, 0.01);
-    NN::MSELoss mse;
+    Optim::SGD sgd(params, 0.0001);
+    NN::CategoricalCrossEntropyLoss lossFunction;
 
 
 
@@ -39,17 +44,15 @@ int main() {
             Matrix batchX = batch.first;
             Matrix batchY = batch.second;
             Matrix batchYhat = myModel.forward(batchX);
-            double loss = mse.compute(batchYhat, batchY);
+            double loss = lossFunction.compute(batchYhat, batchY);
             totalLoss += loss;
             batches++;
-            //Matrix grad = mse.gradient(batchYhat, batchY);
-            //myModel.backward(grad);
-            //sgd.step();
+            Matrix grad = lossFunction.gradient(batchYhat, batchY);
+            myModel.backward(grad);
+            sgd.step();
         }
-
-
         dataloader.reset();
-        std::cout << "-----EPOCH: " << epoch << "TOTAL LOSS: " << totalLoss << "-----------" << std::endl;
+        std::cout << "-----EPOCH: " << epoch << "-----TOTAL LOSS: " << totalLoss << "-----------" << std::endl;
     }
     return 0;
 }

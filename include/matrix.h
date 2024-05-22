@@ -14,10 +14,10 @@ using namespace std;
 
 class Matrix {
 private:
-    vector<vector<double>> data;
     size_t m, n;
 
 public:
+    vector<vector<double>> data;
     Matrix() : m(0), n(0), data() {} // Default constructor
     Matrix(size_t m, size_t n);
 
@@ -78,6 +78,28 @@ public:
     void subtractInPlace(const Matrix &other);
 
     double sum();
+
+    // Method to get the number of rows
+    size_t rows() const {
+        return data.size();
+    }
+
+    // Method to get the number of columns
+    size_t cols() const {
+        if (!data.empty()) {
+            return data[0].size();
+        }
+        return 0; // Return 0 if there are no rows
+    }
+
+    // Access elements
+    const std::vector<double>& row(size_t index) const {
+        return data[index];
+    }
+
+
+
+
 
 
 };

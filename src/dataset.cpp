@@ -72,8 +72,39 @@ public:
     Dataset(const std::string& filename) {
         dataset_path = filename;
         loadFromFile(filename);
+        X = standardizeFeatures(X);
         y = encoder.fit_transform(original_y);
     }
+
+
+    vector<vector<double>> standardizeFeatures(std::vector<std::vector<double>>& data) {
+        size_t numRows = data.size();
+        size_t numCols = data[0].size();
+
+        for (size_t j = 0; j < numCols; ++j) {
+            double mean = 0.0;
+            double std_dev = 0.0;
+
+            // Calculate mean
+            for (size_t i = 0; i < numRows; ++i) {
+                mean += data[i][j];
+            }
+            mean /= numRows;
+
+            // Calculate standard deviation
+            for (size_t i = 0; i < numRows; ++i) {
+                std_dev += (data[i][j] - mean) * (data[i][j] - mean);
+            }
+            std_dev = std::sqrt(std_dev / numRows);
+
+            // Normalize each element in the column
+            for (size_t i = 0; i < numRows; ++i) {
+                data[i][j] = (data[i][j] - mean) / (std_dev == 0 ? 1 : std_dev); // Avoid division by zero
+            }
+        }
+        return data;
+    }
+
 
     void loadFromFile(const std::string& filename) {
         std::ifstream file(filename);
@@ -130,7 +161,9 @@ public:
         indices.resize(ds.getX().size());
         std::iota(indices.begin(), indices.end(), 0);
         if (shuffle) {
-            //TODO
+            random_device rd;
+            std::mt19937  g(rd());
+            std::shuffle(indices.begin(), indices.end(), g);
         }
         currentBatchIndex = 0;
     }
@@ -153,8 +186,9 @@ public:
     void reset() {
         currentBatchIndex = 0;
         if (shuffle) {
-            //TODO;
+            std::random_device rd;  // Obtain a random number from hardware
+            std::mt19937 g(rd());   // Seed the generator
+            std::shuffle(indices.begin(), indices.end(), g);  // Shuffle the indices
         }
     }
-
 };
